@@ -80,7 +80,7 @@ This repo currently contains the starter files.
 
 Clone repo and create a virtual environment
 ```
->> git clone https://github.com/python-engineer/chatBotGFG.git
+>> git clone https://github.com/ankit3388/ChatBotGFG.git
 >> cd chatbot
 >> python -m venv venv
 >> venv\Scripts\activate
