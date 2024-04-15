@@ -74,7 +74,7 @@ It converts the DataFrame to an Excel file, sends the file as an attachment for 
 Execution:
 
 * To run the Flask application, execute python app.py in the terminal.
-Open a web browser and navigate to http://localhost:5000/ to access the chat interface.
+Open a web browser and navigate to link to access the chat interface.
 This repo currently contains the starter files.
 
 
