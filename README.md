@@ -105,7 +105,7 @@ You can start chat in terminal only
 ```
 >> (venv) python chat.py
 ```
-This will create a local host link just copy the link and start just chat 
+This will create a local host link just copy the link and browse it 
 ```
 >> (venv) python app.py
 ```
