@@ -1,0 +1,460 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "When do I get my delivery?",
+        "How long does shipping take?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping usually takes 3-5 days"
+      ]
+    },
+    {
+      "tag": "course inquiry",
+      "patterns": [
+        "what courses do you offer",
+        "tell me about your courses",
+        "I'm interested in courses"
+      ],
+      "responses":[ "We offer a wide range of courses in various fields! To recommend the best fit", "can you tell me a bit about your interests?","Here are some popular categories: Business & Management, Web Development & Design , Data Science & Analytics, Personal Development ,Language Learning ,You can also browse all courses [link to courses page]."]
+    },
+    {
+      "tag": "specific course",
+      "patterns": ["can you tell me more about the course", "what does the course cover in detail", "what will I learn in the course"],
+      "responses": "Sure, the [Course Name] course covers (brief description of course content, e.g., web development fundamentals, including HTML, CSS, and JavaScript).  <br> Is there anything specific you'd like to know about the course content or learning outcomes? <br> For a more detailed description, you can check out the course page here: [link to specific course page]"
+    },
+    {
+      "tag": "enrollment inquiry",
+      "patterns": ["how do I enroll","what's the enrollment process","how can I sign up for a course"],
+      "responses": ["Enrolling is easy! You can follow these steps: 1. Create an account on our platform,2. Find the course you're interested in and click \"Enroll\". <br> 3. Choose your preferred payment method and complete the checkout process. <br> 4. Once enrolled, you'll have access to all course materials and resources. <br> For a more detailed guide, visit our enrollment page: [link to enrollment page]"]
+    },
+    {
+      "tag": "support",
+      "patterns": ["(need help|I have a question)"],
+      "responses": ["I'm happy to help! Can you tell me more about what you need assistance with?"]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "course inquiry",
+      "patterns": [
+        "what courses do you offer",
+        "tell me about your courses",
+        "I'm interested in courses"
+      ],
+      "responses":[ "We offer a wide range of courses in various fields! To recommend the best fit", "can you tell me a bit about your interests?","Here are some popular categories: Business & Management, Web Development & Design , Data Science & Analytics, Personal Development ,Language Learning ,You can also browse all courses [link to courses page]."]
+    },
+    {
+      "tag": "specific course",
+      "patterns": ["can you tell me more about the course", "what does the course cover in detail", "what will I learn in the course"],
+      "responses": "Sure, the [Course Name] course covers (brief description of course content, e.g., web development fundamentals, including HTML, CSS, and JavaScript).  <br> Is there anything specific you'd like to know about the course content or learning outcomes? <br> For a more detailed description, you can check out the course page here: [link to specific course page]"
+    },
+    {
+      "tag": "enrollment inquiry",
+      "patterns": ["how do I enroll","what's the enrollment process","how can I sign up for a course"],
+      "responses": ["Enrolling is easy! You can follow these steps: 1. Create an account on our platform,2. Find the course you're interested in and click \"Enroll\". <br> 3. Choose your preferred payment method and complete the checkout process. <br> 4. Once enrolled, you'll have access to all course materials and resources. <br> For a more detailed guide, visit our enrollment page: [link to enrollment page]"]
+    },
+    {
+      "tag": "support",
+      "patterns": ["(need help|I have a question)"],
+      "responses": ["I'm happy to help! Can you tell me more about what you need assistance with? <br> You can also visit our Help Center: [link to Help Center] or contact our support team directly."]
+    },
+    {
+      "tag": "greeting",
+      "patterns":[ "hi,hey|hello|good (morning|afternoon|evening))"],
+      "responses": ["Hi there! Thanks for visiting [Website Name]. How can I help you today?"]
+    },
+    {
+      "tag": "course inquiry",
+      "patterns": [
+        "what courses do you offer",
+        "tell me about your courses",
+        "I'm interested in courses"
+      ],
+      "responses":[ "We offer a wide range of courses in various fields! To recommend the best fit", "can you tell me a bit about your interests?","Here are some popular categories: Business & Management, Web Development & Design , Data Science & Analytics, Personal Development ,Language Learning ,You can also browse all courses [link to courses page]."]
+    },
+    {
+      "tag": "specific course",
+      "patterns": ["can you tell me more about the course", "what does the course cover in detail", "what will I learn in the course"],
+      "responses": "Sure, the [Course Name] course covers (brief description of course content, e.g., web development fundamentals, including HTML, CSS, and JavaScript).  <br> Is there anything specific you'd like to know about the course content or learning outcomes? <br> For a more detailed description, you can check out the course page here: [link to specific course page]"
+    },
+    {
+      "tag": "enrollment inquiry",
+      "patterns": ["how do I enroll","what's the enrollment process","how can I sign up for a course"],
+      "responses": ["Enrolling is easy! You can follow these steps: 1. Create an account on our platform,2. Find the course you're interested in and click \"Enroll\". <br> 3. Choose your preferred payment method and complete the checkout process. <br> 4. Once enrolled, you'll have access to all course materials and resources. <br> For a more detailed guide, visit our enrollment page: [link to enrollment page]"]
+    },
+    {
+      "tag": "support",
+      "patterns": ["(need help|I have a question)"],
+      "responses": ["I'm happy to help! Can you tell me more about what you need assistance with? <br> You can also visit our Help Center: [link to Help Center] or contact our support team directly."]
+    },
+    {
+    "tag": "suitability",
+    "patterns": [
+      "Suitable for beginner or advanced users?",
+      "Is this course suitable for beginners?",
+      "Can advanced users benefit from this course?"
+    ],
+    "responses": [
+      "This course is designed to cater to both beginners and advanced users.",
+      "Whether you're a beginner or an advanced user, you'll find valuable content in this course.",
+      "No matter your skill level, you'll find something valuable in this course."
+    ]
+  },
+  {
+    "tag": "pace",
+    "patterns": [
+      "Can I learn at my own pace?",
+      "Is this course self-paced?",
+      "Do I have to follow a strict schedule?"
+    ],
+    "responses": [
+      "Yes, this course is self-paced, allowing you to learn at your own convenience.",
+      "Absolutely, you have the flexibility to learn at your own pace.",
+      "Yes, there are no deadlines or schedules to follow in this course."
+    ]
+  },
+  {
+    "tag": "assignments",
+    "patterns": [
+      "What type of assignments do you give?",
+      "Are there any hands-on assignments in this course?",
+      "Do I have to complete projects as part of the course?"
+    ],
+    "responses": [
+      "You'll be given a variety of assignments including quizzes, coding exercises, and projects.",
+      "Yes, the course includes hands-on assignments to reinforce your learning.",
+      "Projects and assignments are an integral part of this course to help you apply your knowledge."
+    ]
+  },
+  {
+    "tag": "prerequisites",
+    "patterns": [
+      "What are the prerequisites for this course?",
+      "Do I need any prior knowledge to enroll in this course?",
+      "Is there anything I need to know before taking this course?"
+    ],
+    "responses": [
+      "No prior knowledge is required. This course is suitable for beginners.",
+      "There are no specific prerequisites. This course is designed for learners of all levels.",
+      "Basic knowledge of [subject] is recommended but not mandatory."
+    ]
+  },
+  {
+    "tag": "duration",
+    "patterns": [
+      "How long does this course take to complete?",
+      "What is the duration of this course?",
+      "Can you tell me the time frame for completing this course?"
+    ],
+    "responses": [
+      "The course duration varies depending on your pace of learning, but typically takes [X] weeks to complete.",
+      "On average, students complete this course in [X] months.",
+      "The course is designed to be completed within [X] weeks, but you can take longer if needed."
+    ]
+  },
+  {
+    "tag": "cost",
+    "patterns": [
+      "How much does the course cost?",
+      "What is the course fee?",
+      "Can you provide information about the pricing?"
+    ],
+    "responses": [
+      "The course fee is [X].",
+      "The cost of the course is [X], with options for installment payments.",
+      "You can enroll in this course for [X] dollars."
+    ]
+  },
+  {
+    "tag": "doubt_support",
+    "patterns": [
+      "How is the doubt support?",
+      "Is there any provision for doubt resolution?",
+      "Do you provide doubt clearing sessions?"
+    ],
+    "responses": [
+      "We offer dedicated doubt support through forums, live sessions, and one-on-one mentoring.",
+      "You'll have access to doubt clearing sessions with experienced instructors throughout the course.",
+      "Our doubt support system ensures that all your queries are addressed promptly by our expert team."
+    ]
+  },
+  {
+    "tag": "placement",
+    "patterns": [
+      "Does this course offer placement opportunities?",
+      "Is there any assistance provided for job placements?",
+      "Can I expect job placements after completing this course?"
+    ],
+    "responses": [
+      "Yes, we provide placement assistance to eligible candidates upon course completion.",
+      "Our placement team works closely with industry partners to help you secure job opportunities.",
+      "Graduates of this course are eligible for placement opportunities with our partner companies."
+    ]
+  },
+  {
+    "tag": "differentiation",
+    "patterns": [
+      "How is the course different from other platform courses?",
+      "What sets this course apart from similar offerings?",
+      "Is there anything unique about this course?"
+    ],
+    "responses": [
+      "Our course focuses on practical skills and real-world applications, setting it apart from traditional academic courses.",
+      "We offer hands-on projects and industry-relevant content, ensuring that you gain practical experience.",
+      "This course is tailored to meet the needs of today's job market, giving you a competitive edge."
+    ]
+  },
+  {
+    "tag": "refund_guarantee",
+    "patterns": [
+      "Is there any money-back guarantee if I didn't like the course?",
+      "Do you offer a refund if I'm not satisfied with the course?",
+      "What is your refund policy?"
+    ],
+    "responses": [
+      "Yes, we offer a 100% money-back guarantee within the first [X] days of enrollment if you're not satisfied with the course.",
+      "We have a no-questions-asked refund policy within the first [X] days of enrollment.",
+      "If you're not satisfied with the course, you can request a refund within [X] days of enrollment."
+    ]
+  },
+  {
+    "tag": "helpful",
+    "patterns": [
+      "Is this course relevant in today's market?",
+      "Will this course help me in my career?",
+      "Is the course content up-to-date with industry standards?"
+    ],
+    "responses":["Yes Definately "]
+    },
+    {
+      "tag": "greeting",
+      "patterns": ["(hi|hey|hello|good (morning|afternoon|evening))"],
+      "repsonses": ["Hi there! Thanks for visiting [Website Name]. How can I help you today?"]
+    },
+    {
+      "tag": "course inquiry",
+      "patterns": ["(what courses do you offer|tell me about your courses|I'm interested in (.*) courses)"],
+      "responses":["We offer a wide range of courses in various fields! To recommend the best fit, can you tell me a bit about your interests? <br> Here are some popular categories: <br> * Business & Management <br> * Web Development & Design <br> * Data Science & Analytics <br> * Personal Development <br> * Language Learning <br> You can also browse all courses [link to courses page]."]
+    },
+    {
+      "tag": "course level",
+      "patterns": ["(is this course suitable for beginners|is this an advanced course|what's the difficulty level)"],
+      "responses": ["This course is geared towards (beginners/intermediates/advanced learners), depending on the specific program.  Can you tell me a bit about your experience level in this area?"]
+    },
+    {
+      "tag": "self paced",
+      "patterns": ["can I learn at my own pace"],
+      "responses": ["Absolutely! Our courses are designed for self-paced learning. You can access the materials and complete assignments on your own schedule."]
+    },
+    {
+      "tag": "assignments",
+      "patterns": ["what type of assignments do you give"],
+      "responses": ["The course includes a variety of assignments to help you solidify your learning, such as (list assignment types, e.g., quizzes, coding exercises, projects)."]
+    },
+    {
+      "tag": "prerequisites",
+      "patterns": ["what are the prerequisites for this course"],
+      "responses":[ "There are no specific prerequisites for this course. However, a basic understanding of (mention any foundational knowledge) would be helpful."]
+    },
+    {
+      "tag": "course duration",
+      "patterns": ["how long does this course take to complete"],
+      "responses": ["The estimated completion time for this course is (duration), but it can vary depending on your learning pace."]
+    },
+    {
+      "tag": "course cost",
+      "patterns": ["how much does this course cost"],
+      "responses": ["The cost of the course is (price). You can find more details about pricing options on the course page: [link to course page]."]
+    },
+    {
+      "tag": "doubt support",
+      "patterns": ["how is the doubt support"],
+      "responses": ["We offer comprehensive doubt support! You can get assistance through our online forum, discussion boards, or by contacting our dedicated support team."]
+    },
+    {
+      "tag": "placement",
+      "patterns": ["does this course offer placement opportunities"],
+      "responses": ["While we can't guarantee placement, we do offer career services such as (list services, e.g., resume writing workshops, mock interviews) to help you prepare for your job search."]
+    },
+    {
+      "tag": "course uniqueness",
+      "patterns": ["how is this course different from other platform courses"],
+      "responses": ["Our course stands out because of (mention unique features, e.g., industry-experienced instructors, project-based learning, personalized feedback)."]
+    },
+    {
+      "tag": "refund policy",
+      "patterns":[ "is there any money back guarantee"],
+      "responses":[ "We offer a (mention refund policy details, e.g., 30-day money-back guarantee) if you're not satisfied with the course."]
+    },
+    {
+      "tag": "relevance",
+      "patterns": "is this course relevant in today's market",
+      "responses": ["Absolutely! This course covers in-demand skills that are highly relevant to the current job market. You can find out more about industry trends on our career resources page: [link to career resources]."]
+    },
+    {
+      "tag": "dsa",
+      "patterns": ["is a good DSA a prerequisite for this course"],
+      "responses": ["A solid foundation in Data Structures and Algorithms (DSA) would be beneficial for this course, but it's"]
+    },
+    {
+      "tag": "course content",
+      "patterns": ["what does the course cover"],
+      "responses": ["The course covers (brief description of course content, e.g., web development fundamentals, including HTML, CSS, and JavaScript). Is there anything specific you'd like to know about the course content or learning outcomes? For a more detailed description, you can check out the course page here: [link to specific course page]"]
+    },
+    {
+      "tag": "enrollment process",
+      "patterns": ["how do I enroll","what's the enrollment process","how can I sign up for a course"],
+      "responses": ["Enrolling is easy! You can follow these steps: 1. Create an account on our platform,2. Find the course you're interested in and click \"Enroll\". <br> 3. Choose your preferred payment method and complete the checkout process. <br> 4. Once enrolled, you'll have access to all course materials and resources. <br> For a more detailed guide, visit our enrollment page: [link to enrollment page]"]
+    },
+    {
+      "tag": "support",
+      "patterns": ["(need help|I have a question)"],
+      "responses": ["I'm happy to help! Can you tell me more about what you need assistance with? <br> You can also visit our Help Center: [link to Help Center] or contact our support team directly."]
+    },
+    {
+      "tag": "suitability",
+      "patterns": [
+        "Suitable for beginner or advanced users?",
+        "Is this course suitable for beginners?",
+        "Can advanced users benefit from this course?"
+      ],
+      "responses": [
+        "This course is designed to cater to both beginners and advanced users.",
+        "Whether you're a beginner or an advanced user, you'll find valuable content in this course.",
+        "No matter your skill level, you'll find something valuable in this course."
+      ]
+    },
+    {
+      "tag": "pace",
+      "patterns": [
+        "Can I learn at my own pace?",
+        "Is this course self-paced?",
+        "Do I have to follow a strict schedule?"
+      ],
+      "responses": [
+        "Yes, this course is self-paced, allowing you to learn at your own convenience.",
+        "Absolutely, you have the flexibility to learn at your own pace.",
+        "Yes, there are no deadlines or schedules to follow in this course."]
+    },
+    {
+      "tag": "assignments",
+      "patterns": [
+        "What type of assignments do you give?",
+        "Are there any hands-on assignments in this course?",
+        "Do I have to complete projects as part of the course?"
+      ],
+      "responses": [
+        "You'll be given a variety of assignments including quizzes, coding exercises, and projects.",
+        "Yes, the course includes hands-on assignments to reinforce your learning.",
+        "Projects and assignments are an integral part of this course to help you apply your knowledge."
+      ]
+    },
+    {
+      "tag": "prerequisites",
+      "patterns": [
+        "What are the prerequisites for this course?",
+        "Do I need any prior knowledge to enroll in this course?",
+        "Is there anything I need to know before taking this course?"
+      ],
+      "responses": [
+        "No prior knowledge is required. This course is suitable for beginners.",
+        "There are no specific prerequisites. This course is designed for learners of all levels.",
+        "Basic knowledge of [subject] is recommended but not mandatory."
+      ]
+    },
+    {
+      "tag": "duration",
+      "patterns": [
+        "How long does this course take to complete?",
+        "What is the duration of this course?",
+        "Can you tell me the time frame for completing this course?"
+      ],
+      "responses": [
+        "The course duration varies depending on your pace of learning, but typically takes [X] weeks to complete.",
+        "On average, students complete this course in [X] months.",
+        "The course is designed to be completed within [X] weeks, but you can take longer if needed."
+      ]
+    },
+    {
+      "tag": "cost",
+      "patterns": [
+        "How much does the course cost?",
+        "What is the course fee?",
+        "Can you provide information about the pricing?"
+      ],
+      "responses": [
+        "The course fee is [X].",
+        "The cost of the course is [X], with options for installment payments.",
+        "You can enroll in this course for [X] dollars."
+      ]
+    },
+    {
+      "tag": "doubt support",
+      "patterns": [
+        "How is the doubt support?",
+        "Is there any provision for doubt resolution?",
+        "Do you provide doubt clearing sessions?"
+      ],
+      "responses": [
+        "We offer dedicated doubt support through forums, live sessions, and one-on-one mentoring."]
+    }
+  ]
+}
