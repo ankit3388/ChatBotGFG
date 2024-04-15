@@ -3,13 +3,13 @@ The objective of this project is to develop an AI chat bot capable of efficientl
 
 
 # Features
-User-Friendly Interface
-FAQ Integration
-NLP Techniques
-Fallback to Doubt Assistant
-User Satisfaction Feedback
-Data Sharing with Sales Team
-Performance Monitoring
+* User-Friendly Interface
+* FAQ Integration
+* NLP Techniques
+* Fallback to Doubt Assistant
+* User Satisfaction Feedback
+* Data Sharing with Sales Team
+* Performance Monitoring
 
 # Dataset
 For training the chat bot model, the intents.json dataset was used. This dataset contains a collection of intents along with associated patterns and responses, which are used to train the model to recognize user intents and generate appropriate responses.
@@ -22,18 +22,20 @@ The structure of the dataset typically includes the following fields for each in
 
 
 # Technologies Used
-Programming Language: Python is the primary programming language used for developing the chatbot. Python is widely used in machine learning and natural language processing (NLP) tasks due to its extensive libraries and ease of use.
+* Programming Language: Python is the primary programming language used for developing the chatbot. Python is widely used in machine learning and natural language processing (NLP) tasks due to its extensive libraries and ease of use.
 
 * Deep Learning Framework: PyTorch is the deep learning framework utilized in this implementation. PyTorch provides a flexible and dynamic neural network library, making it suitable for building and training complex models.
 
 Libraries:
 
 * torch: PyTorch library for building and training neural networks.
-torch.nn (Neural Network): PyTorch's neural network module used to define the architecture of the chatbot model.
-torch.utils.data: PyTorch's data loading utility used to handle datasets and create data loaders for training.
+* torch.nn (Neural Network): PyTorch's neural network module used to define the architecture of the chatbot model.
+* torch.utils.data: PyTorch's data loading utility used to handle datasets and create data loaders for training.
 * json: Python library for handling JSON data, used to load the intents dataset.
 * numpy: Library for numerical computing, used for array operations and data manipulation.
 * random: Python library for generating random numbers, used for shuffling data during training.
+Dataset Handling:
+
 * intents.json: JSON file containing the intents, patterns, and responses for training the chatbot. This dataset is loaded and preprocessed to create training examples.
 * ChatDataset: Custom PyTorch dataset class created to handle the chatbot training data. It implements methods to support indexing and retrieving samples from the dataset.
 Model Architecture:
@@ -50,47 +52,63 @@ Saving the Model:
 
 After training, the model's state dictionary along with other necessary information (input size, hidden size, output size, vocabulary, tags) is saved to a file named data.pth using PyTorch's torch.save() function.
 ## Initial Setup:
+
+# Flask Application Setup:
+
+* The code initializes a Flask web application to host the chatbot.
+Initialization of DataFrame:
+
+* A pandas DataFrame named chat_df is created to store chat transcripts with columns for Date, Time, Message, and Response.
+Home Route:
+
+* The '/' route is defined to render the base HTML template for the chat interface.
+Prediction Route:
+
+* A POST route '/predict' is defined to handle user queries.
+It retrieves the user message from the request, gets a response from the chatbot, updates the DataFrame with the chat transcript, and returns the chatbot's response as JSON.
+Download Route:
+
+* A GET route '/download' is defined to allow users to download chat transcripts.
+It converts the DataFrame to an Excel file, sends the file as an attachment for download.
+Execution:
+
+* To run the Flask application, execute python app.py in the terminal.
+Open a web browser and navigate to http://localhost:5000/ to access the chat interface.
 This repo currently contains the starter files.
 
 
 Clone repo and create a virtual environment
 ```
-$ git clone https://github.com/python-engineer/chatbot-deployment.git
-$ cd chatbot-deployment
-$ python -m venv venv
-$ venv\Scripts\activate
+>> git clone https://github.com/python-engineer/chatbot-deployment.git
+>> cd chatbot-deployment
+>> python -m venv venv
+>> venv\Scripts\activate
+>> (venv) pip install Flask torch torchvision nltk
+```
 
-Install dependencies
-```
-$ (venv) pip install Flask torch torchvision nltk
-```
 Install nltk package
 ```
-$ (venv) python
->>> import nltk
->>> nltk.download('punkt')
+>> (venv) python
+>> import nltk
+>> nltk.download('punkt')
 ```
 Modify `intents.json` with different intents and responses for your Chatbot
 
 Run
 ```
-$ (venv) python train.py
+>> (venv) python train.py
 ```
 This will dump data.pth file. And then run
 the following command to test it in the console.
+You can start chat in terminal only
 ```
-$ (venv) python chat.py
+>> (venv) python chat.py
+```
+This will create a local host link just copy the link and start just chat 
+```
+>> (venv) python app.py
 ```
 
-Now for deployment follow my tutorial to implement `app.py` and `app.js`.
 
-## Watch the Tutorial
-[![Alt text](https://img.youtube.com/vi/a37BL0stIuM/hqdefault.jpg)](https://youtu.be/a37BL0stIuM)
-[https://youtu.be/a37BL0stIuM](https://youtu.be/a37BL0stIuM)
 
-## Note
-In the video we implement the first approach using jinja2 templates within our Flask app. Only slight modifications are needed to run the frontend separately. I put the final frontend code for a standalone frontend application in the [standalone-frontend](/standalone-frontend) folder.
 
-## Credits:
-This repo was used for the frontend code:
-https://github.com/hitchcliff/front-end-chatjs
