@@ -10,6 +10,7 @@ The objective of this project is to develop an AI chat bot capable of efficientl
 * User Satisfaction Feedback
 * Data Sharing with Sales Team
 * Performance Monitoring
+![image](https://github.com/ankit3388/ChatBotGFG/assets/106178304/00411411-e636-4947-9718-30bd9bbcd72b)
 
 # Dataset
 For training the chat bot model, the intents.json dataset was used. This dataset contains a collection of intents along with associated patterns and responses, which are used to train the model to recognize user intents and generate appropriate responses.
