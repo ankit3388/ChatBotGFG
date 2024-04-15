@@ -75,13 +75,13 @@ It converts the DataFrame to an Excel file, sends the file as an attachment for 
 Execution:
 
 * To run the Flask application, execute python app.py in the terminal.
-Open a web browser and navigate to http://localhost:5000/ to access the chat interface.
+Open a web browser and navigate to link to access the chat interface.
 This repo currently contains the starter files.
 
 
 Clone repo and create a virtual environment
 ```
->> git clone https://github.com/python-engineer/chatbot-deployment.git
+>> git clone https://github.com/ankit3388/ChatBotGFG.git
 >> cd chatbot-deployment
 >> python -m venv venv
 >> venv\Scripts\activate
